@@ -1,4 +1,4 @@
-### TV Monitor
+## TV Monitor
 
 Watch a lot of TV? This is a small Chrome extension to help keep track of when you have episodes to watch of your favorite shows.
 
@@ -8,7 +8,7 @@ The extension is currently in development and as a result not available for down
 
 * * *
 
-*TO DO*:
+**TO DO**:
 - [ ] Account for episode count overflow
 - [ ] Account for title overflow
 - [ ] Add different view options
