@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 350px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#add-show {
+    width: 25px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:    all 0.5s ease;
+    -o-transition:      all 0.5s ease;
+    transition:         all 0.5s ease;
+}
+
+#add-show.x {
+    transform: rotate(45deg);
+}
+
+#title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#loading {
+    position: fixed;
+    top: 8px;
+    left: 88px;
+    width: 25px;
+}
+
+#loading img {
+    width: 100%;
+}
+
+#show-container {
+    z-index: 1;
+    position: relative;
+    width: 350px;
+    margin-bottom: 20px;
+    left: 0;
+    overflow-y: overlay;
+    -webkit-transition: left 0.5s ease;
+    -moz-transition:    left 0.5s ease;
+    -o-transition:      left 0.5s ease;
+    transition:         left 0.5s ease;
+}
+
+#show-container.hidden {
+    left: -350px;
+}
+
+.show {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.show-title {
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.show-title:hover {
+    text-decoration: underline;
+}
+
+.show-count {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #e65a5a;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.show-count p {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.show-delete {
+    width: 20px;
+    margin-left: 5px;
+    vertical-align: top;
+    display: none;
+    cursor: pointer;
+}
+
+.show-delete.reveal {
+    display: inline-block;
+}
+
+.episode-container {
+    /*
+    max-height: 200px;
+    overflow-y: overlay;
+    */
+}
+
+.episode {
+    margin-top: 5px;
+}
+
+.episode.watched {
+    opacity: 0.4;
+}
+
+.episode-check {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    display: inline-block;
+    background: url(../img/glyphicons.png);
+    background-position: -119px -120px;
+    cursor: pointer;
+}
+
+.episode-check:hover {
+    background-position: -95px -120px;
+}
+
+.episode.watched .episode-check {
+    background-position: -95px -120px;
+}
+
+.episode.watched .episode-check:hover {
+    background-position: -119px -120px;
+}
+
+.episode-title {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.episode-title:hover {
+    text-decoration: underline;
+}
+
+.episode-details {
+    display: none;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.episode-date {
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+.view-more {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#add-container {
+    position: absolute;
+    top: 45px;
+    opacity: 1;
+    z-index: 2;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition:    opacity 0.5s ease;
+    -o-transition:      opacity 0.5s ease;
+    transition:         opacity 0.5s ease;
+}
+
+#add-container.hidden {
+    opacity: 0;
+    z-index: -5;
+
+}
+
+#search-bar {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 260px;
+    font-size: 15px;
+}
+
+#search-button {
+    font-size: 15px;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #a3a3a3;
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.search-result {
+    margin: 10px;
+}
+
+.search-title {
+    font-weight: 700;
+}
+
+.add-button {
+    color: #7bbdee;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    text-decoration: underline;
+}

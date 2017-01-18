@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "TV Monitor",
+  "description": "Stay up-to-date on your TV shows",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+  ]
+}
